@@ -1,0 +1,690 @@
+﻿
+@media (min-width: 320px) and (max-width: 504px) {
+    .Login-Card {
+        width: 280px;
+    }
+
+    .Header .Lead-one {
+        display: inline-block;
+        color: #07A287;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+        margin: 3px 5px 0 5px;
+        vertical-align: middle;
+    }
+
+    .Header-right .Hea-Icons {
+        width: 16px;
+        height: 16px;
+    }
+
+    .Header .Img4 {
+        width: 25px;
+        height: 25px;
+        background-color: #d8d8d8;
+        border: 1px solid #d8d8d8;
+        border-radius: 50%;
+        font-size: 10px;
+        line-height: 24px !important;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .SettHead .HeadDash-right .Addnew {
+        /*display:none;*/
+        width: 100%;
+    }
+
+    .HeadDash-right .Addnew {
+        display: none;
+    }
+
+    .SettHead .HeadDash-right {
+        float: none;
+        margin: 0;
+    }
+
+    .HeadDash-right {
+        margin-top: 10px;
+    }
+
+    .Ticket-Modal .nav-tabs > li > a {
+        margin: 0;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid transparent;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background-color: #F3F3F3;
+        color: #787878;
+        font-family: Roboto;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 10px 10px 7px 10px;
+    }
+
+        .Ticket-Modal .nav-tabs > li > a.active {
+            cursor: pointer;
+            border-bottom-color: transparent;
+            border: 1px solid #07A287;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: #07A287;
+            color: #FFF;
+            font-family: Roboto;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            padding: 10px 10px 7px 10px;
+        }
+
+    .Ticket-Modal .modal-dialog {
+        width: 90%;
+        max-width: inherit !important;
+    }
+
+    .card-permission {
+        background-color: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        border-radius: 10px;
+        margin: 0px 10px 10px 10px;
+    }
+
+        .card-permission .MarPadd {
+            padding: 20px 0;
+            border-bottom: 1px solid #D0D0D0;
+            margin: 0 10px;
+        }
+
+    .chtop {
+        margin-top: 10px;
+        float: right;
+        margin-right: 0px;
+    }
+
+    .Login-content .card .card-body {
+        padding: 15px 30px 50px;
+    }
+
+    .textbox-email1 {
+        background-color: #ecf2f4;
+        border: 1px solid #ecf2f4;
+        padding: 20px;
+        font-size: 22px;
+        width: 49px !important;
+        text-align: center;
+        height: 43px !important;
+        border-radius: 4px !important;
+        margin: 0 3px 10px 0 !important;
+    }
+
+    .ListItem li label {
+        color: #404040;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        line-height: 19px;
+        text-align: left;
+        margin: 8px 0;
+        cursor: pointer;
+    }
+
+    .card-permission .Permi {
+        color: #07A287;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+        .card-permission .Permi .Sett {
+            color: rgba(0,0,0,0.5);
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+    .card-permission .MarPadd .Circle {
+        background: #F3F3F3;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 0px 5px 6px 6px;
+    }
+
+    .ViewPage {
+        color: #404040;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .ViewPagetext {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    /*Today Start*/
+
+    .Smile-Modal .modal-dialog {
+        width: 85%;
+        max-width: inherit;
+        margin: 150px 34px;
+        padding: 0;
+    }
+
+    .People-Modal .modal-dialog {
+        width: 85% !important;
+        max-width: inherit;
+        margin: 100px auto;
+    }
+
+    .People-Modal .Add button {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 150px;
+        height: 40px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+        padding: 10px 10px;
+    }
+
+    .Lead-Modal .modal-dialog {
+        width: 250px !important;
+        margin: 100px auto;
+    }
+
+    .NewRadioOffer {
+        padding: 0 25px 10px !important;
+    }
+
+    .Ticket-Modal .nav-tabs {
+        padding: 10px 25px 6px 25px;
+        border-bottom: 1px solid #E9E9E9;
+    }
+
+    .Ticket-Modal .RelianceLabel .Base {
+        display: block;
+        height: 42px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .Ticket-Modal .RelianceLabel input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Ticket-Modal .Base .align {
+        width: 100%;
+    }
+
+    .Ticket-Modal .RelianceLabel .addon {
+        width: 100%;
+    }
+
+    .Ticket-Modal .male {
+        margin: -5px 20px 0 0;
+        display: inline-block;
+        height: 42px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .Ticket-Modal .top {
+        float: right;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .Ticket-Modal .Base1 {
+        float: right;
+        text-align: left;
+        width: 100%;
+        margin: 13px 0;
+        font-weight: 600;
+    }
+
+    .Ticket-Modal .RelianceLabel {
+        padding: 15px 25px;
+        height: 450px;
+    }
+
+    .Ticket-Modal .FlipLabel {
+        height: 840px !important;
+    }
+
+    .Ticket-Modal .ExRatio {
+        height: 80px !important;
+        margin: 54px 0 20px 0;
+    }
+
+    .StaDrop {
+        height: 50px;
+    }
+
+    .Sett-Lead-Modal .modal-dialog {
+        width: 230px !important;
+        margin: 170px auto;
+    }
+
+    .Sett-Lead-Modal .Date {
+        width: 80%;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        height: 35px;
+    }
+
+    .Sett-Lead-Modal .modal-dialog {
+        width: 230px !important;
+        /* margin-top: 170px; */
+        /* margin: 0 0; */
+        margin-right: 0;
+        margin-top: 110px;
+    }
+
+    .HeadDash-right .Sear i {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        color: #07A287;
+        cursor: pointer;
+    }
+
+    .User-se .Padrea1 {
+        padding: 0px 0px 0px 15px;
+    }
+
+    .EMDNEW1 .modal-dialog {
+        position: relative;
+        width: 200px !important;
+        max-width: inherit;
+        /* margin-top: 200px; */
+        margin: 150px auto;
+    }
+
+    .EMD .modal-dialog {
+        position: relative;
+        width: 200px !important;
+        max-width: inherit;
+        margin: 150px auto;
+    }
+
+    .card-Ad-User .PaddNew {
+        padding: 15px 30px 20px 30px;
+    }
+
+    .Publish-Edit .radio-toolbar {
+        display: block !important;
+        text-align: center;
+    }
+
+        .Publish-Edit .radio-toolbar label {
+            display: inline-block;
+            text-align: center;
+            background-color: #FFF;
+            cursor: pointer;
+            padding: 4px 15px;
+            font-family: sans-serif, Arial;
+            font-size: 14px;
+            color: #787878;
+            border: 1px solid #07A287;
+            margin: 5px 5px;
+            width: 100%;
+            height: 90px;
+        }
+
+    .card-Ad-User .marg {
+        margin: 0px 0 15px 0;
+        text-align: center;
+    }
+
+    .Logout-Modal .modal-dialog {
+        max-width: inherit !important;
+        width: 45% !important;
+        /* margin-right: 0; */
+        /* margin-top: 45px; */
+        margin: 50px auto;
+    }
+
+    .PaddNew .dropdown-menu.show {
+        width: 210px !important;
+    }
+
+    .dataTables_info {
+        float: left !important;
+    }
+
+    .pagination {
+        float: right;
+    }
+
+    .RoleHead .Settin {
+        float: none;
+    }
+
+    .Settin .AddNew {
+        width: 100%;
+    }
+
+    .RoleHead .Settin .AddNew {
+        width: 100%;
+    }
+
+    .Settin {
+        float: none;
+    }
+
+    .Card-Role-Add .ListItem .card-body {
+        margin: 0px 15px 0 15px !important;
+    }
+
+    .card-Ad-User .Save {
+        width: 100%;
+    }
+
+    .card-Ad-User .Cancel {
+        width: 100%;
+    }
+
+    .marg .savcan {
+        float: none;
+    }
+
+    .brandscategory ul {
+        display: block;
+    }
+
+        .brandscategory ul li {
+            margin: 0 0 10px 0;
+        }
+
+    .HeadDash-right .Addnew-icon label {
+        position: absolute;
+        top: 0px;
+        right: 4px;
+        color: #07A287;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .NewRadioOffer .StatDrop {
+        margin: 5px !important;
+    }
+
+    #msform .action-button {
+        width: 100%;
+    }
+
+    .action-button-can {
+        width: 100%;
+    }
+
+    #progressbar {
+        margin-bottom: 85px;
+        color: lightgrey;
+    }
+
+        #progressbar li {
+            list-style-type: none;
+            font-size: 12px;
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+            #progressbar li:before {
+                background: transparent;
+            }
+
+        #progressbar #account:before {
+            background: transparent;
+        }
+
+        #progressbar .active {
+            color: #07A287;
+            text-transform: uppercase;
+            width: 70%;
+            font-size: 13px;
+        }
+
+        #progressbar li:after {
+            display: none;
+        }
+
+    #msform .action-button {
+        width: 100%;
+    }
+
+    .action-button-can {
+        width: 100%;
+    }
+
+    #progressbar .active:last-child {
+        width: 100%;
+    }
+
+    #progressbar #personal:before {
+        background: transparent;
+    }
+
+    #progressbar #partnerSetting:before {
+        background: transparent;
+    }
+
+    #progressbar #voucherConfig:before {
+        background: transparent;
+    }
+
+    #progressbar #voucherGen:before {
+        background: transparent;
+    }
+
+    .cus-savenext-btn {
+        width: 100%;
+    }
+
+    .ClMob {
+        display: block;
+        margin: 7px 0px;
+        text-align: center;
+    }
+
+    .breadcrums .PartReli {
+        display: block;
+    }
+
+    .breadcrums label {
+        display: block;
+    }
+
+    .StatusOption-Modal .modal-dialog {
+        width: 70%;
+        max-width: inherit !important;
+        margin: 105PX AUTO;
+    }
+
+    .Smile-Modal .modal-footer {
+        border: none;
+        padding: 10px 30PX;
+    }
+
+    .Smile-Modal .CanDone {
+        float: none;
+        display: block;
+    }
+
+    .Smile-Modal .Can {
+        width: 100%;
+    }
+
+    .Smile-Modal .Done {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Ticket-Modal .modal-dialog {
+        width: 74%;
+        max-width: inherit !important;
+    }
+
+    .Smile-Modal .modal-dialog {
+        width: 40%;
+        max-width: inherit;
+        margin: 100px auto;
+    }
+
+    .People-Modal .modal-dialog {
+        width: 88% !important;
+        max-width: inherit;
+        margin: 100px auto;
+    }
+
+    .People-Modal .Add button {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 150px;
+        height: 40px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+        padding: 10px 10px;
+    }
+
+    .NewRadioOffer {
+        padding: 0px 25px !important;
+    }
+
+    .Ticket-Modal .nav-tabs {
+        padding: 10px 25px 6px 25px;
+        border-bottom: 1px solid #E9E9E9;
+    }
+
+    .Ticket-Modal .a2 {
+        border: 1px solid red;
+        padding: 5px 6px;
+        background-color: #F3F3F3;
+        border: 1px solid #E4E4E4;
+        border-radius: 0 0 3px 3px;
+        color: #9A9A9A;
+        text-align: center;
+    }
+
+    .Ticket-Modal .card-ab {
+        width: 29.5%;
+    }
+
+    .Publish-Edit .radio-toolbar label {
+        display: inline-block;
+        text-align: center;
+        background-color: #FFF;
+        cursor: pointer;
+        padding: 4px 15px;
+        font-family: sans-serif, Arial;
+        font-size: 14px;
+        color: #787878;
+        border: 1px solid #07A287;
+        margin: 5px 5px;
+        width: 75px;
+        height: 90px;
+    }
+
+    .card-permission .MarPadd {
+        padding: 12px 0;
+        border-bottom: 1px solid #D0D0D0;
+        margin: 0 15px;
+    }
+
+    .Logout-Modal .modal-dialog {
+        max-width: inherit !important;
+        width: 20% !important;
+        margin-right: 15px;
+        margin-top: 45px;
+    }
+
+
+    .Sett-Lead-Modal .Date {
+        width: 84%;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        height: 35px;
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 38%;
+        float: left;
+        position: relative;
+    }
+
+    #progressbar .active {
+        color: #07A287;
+        text-transform: uppercase;
+        width: 30%;
+        font-size: 13px;
+    }
+
+        #progressbar .active:last-child {
+            width: 36%;
+        }
+
+    .fetch-details {
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        background-color: #07A287;
+        color: #fff;
+        border-radius: 0px;
+        font-size: 10px;
+        padding: 8px 6px;
+        border: none;
+    }
+
+    .card-Ad-User .Publish-Edit .radio-toolbar {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    #progressbar li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 38%;
+        float: left;
+        position: relative;
+    }
+
+    #progressbar .active {
+        color: #07A287;
+        text-transform: uppercase;
+        width: 30%;
+        font-size: 13px;
+    }
+
+        #progressbar .active:last-child {
+            width: 36%;
+        }
+}

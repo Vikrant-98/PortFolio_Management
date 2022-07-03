@@ -1,0 +1,5287 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*body {
+}*/
+
+body {
+    overflow: auto;
+}
+
+    body::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    body::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #D3D3D3;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+
+        body::-webkit-scrollbar-thumb:window-inactive {
+            background: #D3D3D3;
+        }
+
+/* Lgoin pages css start by kalpesh */
+
+.Login-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+    .Login-wrapper .Login-content {
+        position: relative;
+        padding: 15px;
+        z-index: 5;
+    }
+
+.Login-content {
+    margin: 50px auto;
+}
+
+.ReactTable {
+    border: 1px solid rgba(132, 132, 132, 0.1);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    border: none !important;
+}
+
+.Login-Card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+    width: 405px;
+    height: auto;
+}
+
+.redborder {
+    border: 1px solid red !important;
+}
+
+.oval {
+    background-color: #FFF;
+    border-radius: 100%;
+    width: 101px;
+    height: 101px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.Lead {
+    color: #07A287;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    margin: 10px 0;
+}
+
+.Login-content .card .card-body {
+    padding: 15px 60px 50px;
+}
+
+.Login-text {
+    color: #4A494A;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    margin: 5px 0 10px 0;
+}
+
+.textbox-email {
+    background-color: #ecf2f4;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    font-size: 14px;
+    padding: 10px;
+    border: 0;
+}
+
+.inputbox {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.textbox-email:focus {
+    outline: none;
+}
+
+.textbox-email::placeholder {
+    color: #9B9A9B;
+    background-color: #ecf2f4;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+
+.Login-btn {
+    background-color: #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFF;
+    border: none;
+    font-family: lato;
+    padding: 10px;
+    font-size: 14px;
+}
+
+    .Login-btn:focus {
+        outline: none;
+    }
+
+    .Login-btn a:focus {
+        text-decoration: none !important;
+    }
+
+    .Login-btn a:hover {
+        text-decoration: none !important;
+    }
+
+.Forgot {
+    color: #07A287;
+    font-family: Lato;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.Sent {
+    color: #9B9A9B;
+    font-family: Lato;
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+}
+
+.textbox-email1 {
+    background-color: #ecf2f4;
+    border: 1px solid #ecf2f4;
+    padding: 20px;
+    font-size: 22px;
+    width: 65px !important;
+    text-align: center;
+    height: 43px !important;
+    border-radius: 4px !important;
+    margin: 0 3px 10px 0 !important;
+}
+
+    .textbox-email1:focus {
+        outline: none;
+    }
+
+    .textbox-email1::placeholder {
+        color: #9B9A9B;
+        background-color: #ecf2f4;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+        line-height: 10px;
+    }
+
+.Login-Card a:focus {
+    color: #2D8F7B;
+    text-decoration: none;
+}
+
+.Login-Card a:hover {
+    color: #2D8F7B;
+    text-decoration: none;
+}
+/* Lgoin pages css End by kalpesh */
+.Header {
+    margin: 10px 0;
+}
+
+.Header-padd {
+    padding: 8px 5px 10px 14px;
+}
+
+.Header-left {
+    float: left;
+}
+
+.Header-right {
+    float: right;
+}
+
+.Header .Lead-one {
+    display: inline-block;
+    color: #07A287;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin: 3px 15px 0 15px;
+    vertical-align: middle;
+}
+
+.Header .Lead-img {
+    display: inline-block;
+}
+
+.Header .Img4 {
+    width: 30px;
+    height: 30px;
+    background-color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 28px !important;
+    text-align: center;
+    font-weight: 600;
+}
+
+.Header-right a {
+    margin: 0 5px;
+    display: inline-block;
+    color: #4a4a4a;
+    vertical-align: sub;
+}
+
+.Header-right .Hea-Icons {
+    width: 18px;
+    height: 18px;
+}
+
+.Header-left .Lead-Icons {
+    width: 33px;
+    height: 33px;
+}
+/* .dashboard-main {
+  padding: 15px 10px;
+} */
+.Dash-Header {
+    width: 100%;
+}
+
+    .Dash-Header .nav-tabs .nav-link {
+        color: #666;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        line-height: 19px;
+        text-align: left;
+    }
+    /* .Dash-Calen .Datepicker {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 3px;
+  height: 35px;
+  background: #FFF url("../img/Calendar.png") no-repeat right 15px center;
+  background-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+.Dash-Calen .Datepicker:focus {
+  outline: none;
+} */
+    .Dash-Header .Hea-Icons {
+        margin: 0 5px;
+    }
+
+    .Dash-Header .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #07A287;
+        background-color: transparent;
+        border: none;
+    }
+
+    .Dash-Header .nav-tabs .nav-link {
+        border: none;
+    }
+
+    .Dash-Header .nav-tabs {
+        border-bottom: none;
+        float: left;
+        padding: 15px 10px;
+    }
+
+    .Dash-Header .nav-link {
+        padding: 5px 10px;
+    }
+/*.Settin {
+    float: right;
+    padding: 7px 5px;
+    display: none;
+}*/
+
+.Settin .AddNew {
+    background-color: #07A287;
+    border-radius: 4px;
+    width: 110px;
+    height: 43px;
+    border: none;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+    .Settin .AddNew:focus {
+        outline: none;
+    }
+
+.filterlabel {
+    font-size: 13px;
+}
+
+.tab-content {
+    background-color: #FAFAFA;
+}
+
+#UserModal {
+    left: 45%;
+    top: 6%;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.User-Icons {
+    width: 55px;
+    height: 45px;
+    border: 1px solid #4A494A;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+.logout {
+    background-color: #00B894;
+    border-radius: 2px;
+    width: 70px;
+    height: 26px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    border: none;
+}
+
+    .logout:focus {
+        outline: none;
+    }
+
+.card-a {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    /* width: 332px; */
+    height: 176px;
+}
+
+    .card-a span {
+        display: block;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        line-height: 19px;
+    }
+
+    .card-a label {
+        font-family: Roboto;
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 0.28px;
+        line-height: 54px;
+        margin-bottom: 0;
+    }
+
+.card-data {
+    margin: 49px 0;
+}
+
+.Search-all :focus, hover {
+    color: #2D8F7B
+}
+
+.Search-all:first-child {
+    margin-top: 0;
+}
+
+
+#logout-ovrly {
+    background: none;
+}
+
+.Apply-Filt:focus {
+    outline: none;
+}
+
+.Apply-Filt {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+
+.Search-all {
+    display: block;
+    color: #4A494A;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 16px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+    .Search-all:hover {
+        color: #2D8F7B;
+    }
+
+.pagination-bottom {
+    font-size: 12px;
+}
+
+.Dateinp:focus {
+    outline: none;
+}
+
+.Dateinp {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 158px;
+    height: 42px;
+    background: #FFF url("./../img/Calendar.png") no-repeat right 12px center;
+    background-size: 18px;
+    padding: 10px;
+}
+
+.breadcrums {
+    padding: 10px;
+    font-size: 14px;
+    list-style: none;
+    font-weight: 600;
+}
+
+    .breadcrums label {
+        margin-bottom: 2px;
+    }
+
+    .breadcrums a {
+        color: #07A287;
+    }
+
+    .breadcrums .closed {
+        background-color: #FF9047;
+        padding: 3px 20px;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-bottom: 0;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    .breadcrums .published {
+        background-color: #09C1A1;
+        padding: 3px 20px;
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-left: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    .breadcrums .sleep {
+        background-color: rgba(48, 48, 48, 0.5);
+        padding: 3px 20px;
+        font-size: 10px;
+        margin-bottom: 0;
+        margin-left: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    .breadcrums .open {
+        background-color: #0091FF;
+        padding: 3px 20px;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-bottom: 0;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    .breadcrums .terminate {
+        background-color: #E05050;
+        padding: 3px 20px;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-bottom: 0;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+.content-box-out {
+    background-color: #FAFAFA;
+    padding: 50px 0;
+}
+
+.content-box-in {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.dv-inactive {
+    display: none;
+}
+
+.signuppage-main ol {
+    padding: 0;
+    text-align: left;
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.signuppage-main em {
+    display: block;
+    background: #ececec;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    border-radius: 50%;
+    padding: 3px;
+    color: #999;
+    margin: 0 auto 6px;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.signuppage-main .progtrckr span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ad9e9e;
+    margin: 0 20px;
+}
+
+.step-progress {
+    padding: 0;
+    position: relative;
+}
+
+.progtrckr-done em {
+    background: #07A287;
+    color: #fff;
+}
+
+.progtrckr-doing em {
+    background: #07A287;
+    color: #fff;
+}
+
+.signuppage-main ol li {
+    display: inline-block;
+}
+
+.cus-savenext-btn {
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background-color: #07A287;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 6px 20px;
+    border: none;
+}
+
+.footer-buttons {
+    display: flow-root;
+}
+
+    .footer-buttons .btn-prev {
+        background-color: #07A287;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 25px;
+        margin-top: 20px;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 0;
+    }
+
+    .footer-buttons .btn-next {
+        background-color: #07A287;
+        color: #fff;
+        font-size: 13px;
+        padding: 8px 25px;
+        margin-top: 20px;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 0;
+    }
+
+.content-box-in label {
+    font-size: 13px;
+    color: #4A4A4A;
+    font-weight: 600;
+}
+
+.content-box-in .form-control::placeholder {
+    color: #4A4A4A;
+    font-size: 13px;
+}
+
+.content-box-in .form-control {
+    height: 42px;
+    font-size: 13px;
+    color: #4A4A4A;
+    border-color: #E4E4E4;
+}
+
+.dropdownarw {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-16.png) !important;
+    background-repeat: no-repeat !important;
+    background: content-box;
+    background-position: right 10px center !important;
+}
+
+.progcode {
+    position: relative;
+}
+
+.fetch-details {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background-color: #07A287;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 6px 20px;
+    border: none;
+}
+
+.content-box-in .form-group {
+    margin-bottom: 18px;
+}
+
+.content-box-in hr {
+    margin: 25px 0;
+}
+
+.mob-fie input[type=number]::-webkit-inner-spin-button,
+.mob-fie input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.statusdrp {
+    float: right;
+    padding-top: 12px;
+}
+
+    .statusdrp label {
+        color: #000;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-right: 15px;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+#statusmodal {
+    left: 40%;
+    padding: 12px 0px 0;
+    border-radius: 5px;
+    top: 13%;
+    width: 250px;
+}
+
+    #statusmodal .BottomBorder {
+        border-bottom: 2px solid #EDEDED;
+        padding: 0 15px;
+    }
+
+    #statusmodal .cstatus {
+        color: #000000;
+    }
+
+        #statusmodal .cstatus a.disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+.User-se .Easy {
+    color: #4A494A;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: left;
+    margin: 8px 4px;
+}
+
+.User-se .DashReactTable .ReactTable {
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+}
+
+    .User-se .DashReactTable .ReactTable .rt-thead.-header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .User-se .DashReactTable .ReactTable .rt-thead .rt-tr {
+        text-align: left !important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #ECF2F4 !important;
+    }
+
+.User-se .ReactTable .rt-tbody {
+    background-color: #FFF;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.User-se .DashReactTable .ReactTable .rt-tbody .rt-td {
+    border: none;
+    padding: 15px 22px;
+}
+
+.User-se .DashReactTable .ReactTable .rt-thead .rt-th {
+    padding: 15px 22px !important;
+    border-right: none !important;
+}
+/* .User-se {
+  height: 40vw;
+} */
+.User-se .Images-table img {
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.User-se .Padrea {
+    padding: 22px 0px 22px 13px;
+}
+
+.User-se .Padrea1 {
+    padding: 22px 13px 22px 0px;
+}
+
+.User-se .AddNew:focus {
+    outline: none;
+}
+
+.User-se .AddNew {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 110px;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+
+.Ad-New-Us {
+    width: 100%;
+    background: #F4F4F4;
+    /* padding: 13px 20px; */
+}
+
+    .Ad-New-Us .User label {
+        color: #07A287;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.09px;
+        line-height: 17px;
+        text-align: left;
+        margin: 0;
+    }
+
+.card-Ad-User {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 10px;
+}
+
+    .card-Ad-User .Padding label {
+        display: block;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .card-Ad-User .Padding input:focus {
+        outline: none;
+    }
+
+    .card-Ad-User .Padding input {
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        width: 100%;
+        height: 42px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 10px;
+        margin-bottom: 22px;
+    }
+
+    .card-Ad-User .Padding select:focus {
+        outline: none;
+    }
+
+    .card-Ad-User .Padding {
+        padding: 30px 30px 20px 30px;
+    }
+
+        .card-Ad-User .Padding select {
+            border: 1px solid #E4E4E4;
+            border-radius: 3px;
+            width: 100%;
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            background: #FFF url("../img/Down.png") no-repeat right 15px center;
+            -webkit-appearance: none;
+            background-size: 12px;
+            height: 42px;
+            padding: 10px;
+        }
+
+    .card-Ad-User .Detail {
+        color: #07A287 !important;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold !important;
+        line-height: 17px;
+        text-align: left;
+        margin: 0 0 15px 0 !important;
+    }
+
+.Publish-Edit {
+    /* float: right; */
+    margin: 10px 0 0 0;
+}
+
+    .Publish-Edit span {
+        display: block;
+        color: #07A287;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        margin: 5px 0 10px 0;
+    }
+
+    .Publish-Edit .radio-toolbar input[type="radio"] {
+        width: 0;
+        display: none;
+    }
+
+    .Publish-Edit .radio-toolbar label {
+        display: inline-block;
+        text-align: center;
+        background-color: #FFF;
+        cursor: pointer;
+        padding: 4px 20px;
+        font-family: sans-serif, Arial;
+        font-size: 14px;
+        color: #787878;
+        border: 1px solid #07A287;
+        margin: 0 5px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .Publish-Edit .radio-toolbar input[type="radio"]:checked + label {
+        background-color: #07A287;
+        border-color: #07A287;
+    }
+
+        .Publish-Edit .radio-toolbar input[type="radio"]:checked + label span {
+            color: #FFF;
+        }
+
+    .Publish-Edit .img {
+        width: 20px;
+        height: 20px;
+        margin: 12px 5px;
+    }
+
+.card-Ad-User .PaddNew {
+    padding: 30px 25px 20px 0px;
+}
+
+.card-Ad-User .Save {
+    background-color: #07A287;
+    border-radius: 4px;
+    width: 161px;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #07A287;
+}
+
+    .card-Ad-User .Save:focus {
+        outline: none;
+    }
+
+.card-Ad-User .Cancel:focus {
+    outline: none;
+}
+
+.card-Ad-User .Cancel {
+    background-color: #FFF;
+    border: none;
+    border-radius: 4px;
+    width: 161px;
+    height: 43px;
+    color: #07a287;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+
+.card-Ad-User .marg {
+    margin: 100px 15px 35px 0;
+}
+
+.marg .savcan {
+    float: right;
+}
+
+.User-se .DashReactTable .dow {
+    width: 12px;
+    height: 8px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+#statusmodal .Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.statusdisplay {
+    border: 1px solid #979797;
+    border-radius: 4px;
+    padding: 7px 45px 7px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    background: none;
+    color: #4A4A4A;
+    font-weight: 600;
+}
+
+.PaddNew .pub-one {
+    border-radius: 10px !important;
+}
+
+.card-Ad-User .dashallbrand {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    background: #FFF url("../img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    height: 42px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card-Ad-User .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.card-Ad-User .dashallbrand:focus {
+    outline: none;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input + label {
+    position: relative;
+    padding-left: 25px;
+    margin: 0 13px 12px 13px;
+}
+
+.card-Ad-User .dropdown .AllCheckbox {
+    padding: 10px;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input + label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-color: #fefefe;
+    border: 1px solid #00C599;
+    left: 0;
+    top: 50%;
+    transform: translateY(-51%);
+    border-radius: 0;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+    border: 1px solid #00C599;
+}
+
+.card-Ad-User .dropdown .Apply-Filt:focus {
+    outline: none;
+}
+
+.card-Ad-User .dropdown .Apply-Filt {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.card-Ad-User .dropdown .Search {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    height: 42px;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+}
+
+.card-Ad-User .dropdown .BottomBorder {
+    border-bottom: 2px solid #EDEDED;
+    padding: 4px 15px 12px;
+}
+
+.card-Ad-User .dropdown .Apply {
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.card-Ad-User .dropdown .Reset {
+    color: #07A287;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.card-Ad-User .dropdown .Refresh i {
+    color: #07A287;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.card-Ad-User .dropdown .reset {
+    color: #07A287;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+.card-Ad-User .dropdown .Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.ApiLog {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+    .ApiLog thead {
+        background-color: #ECF2F4;
+        border: none;
+    }
+
+    .ApiLog tbody {
+        background-color: #262821;
+    }
+
+    .ApiLog .table {
+        border: 1px solid #F0F0F0;
+        border-radius: 4px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid #F0F0F0;
+    }
+
+    .ApiLog .tabledata label {
+        color: #9B9A9B;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .ApiLog .table .Border {
+        border-bottom: 1px solid #191C12;
+    }
+
+    .ApiLog .table td {
+        border: none;
+        padding: 15px 30px
+    }
+
+    .ApiLog .table thead th {
+        vertical-align: bottom;
+        width: 250px;
+        padding: 15px 30px;
+        color: #4A494A;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 16px;
+    }
+
+    .ApiLog .table .tabledata .yellow {
+        color: yellow;
+    }
+
+    .ApiLog .table .tabledata .blue {
+        color: rgb(73, 31, 226);
+    }
+
+    .ApiLog .table .tabledata .green {
+        color: #84C140;
+    }
+
+    .ApiLog .table th {
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+.Setting-right {
+    float: right;
+    padding: 7px 5px;
+}
+
+    .Setting-right .Addnew-icon {
+        background-color: #fff;
+        border: 1px solid #07A287;
+        border-radius: 4px;
+        padding: 9px 10px;
+        position: relative;
+        margin: 0 0 0 7px;
+        cursor: pointer;
+    }
+
+    .Setting-right .Lead-Icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Setting-right input:focus {
+        outline: none;
+    }
+
+    .Setting-right input {
+        position: relative;
+        background-color: #FFFFFF;
+        border: 1px solid #07A287;
+        border-radius: 3px;
+        width: 256px;
+        height: 43px;
+        color: #787878;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        padding: 10px;
+    }
+
+
+    .Setting-right .Sear i {
+        position: absolute;
+        right: 63px;
+        top: 73px;
+        color: #07A287;
+        cursor: pointer;
+    }
+
+.close .Cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.Sett-head-Icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.breadcrums .PartReli {
+    display: inline-block;
+}
+/*Header Lead AddNewLead CSS Start*/
+.HeadDash-right .Addnew {
+    background-color: #07A287;
+    border-radius: 4px;
+    width: 150px;
+    height: 42px;
+    border: none;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.HeadDash-right .Addnew-icon {
+    background-color: #fff;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    padding: 7px 10px 10px 10px;
+    position: relative;
+    margin: 0px 5px 0 2px;
+    cursor: pointer;
+}
+
+    .HeadDash-right .Addnew-icon label {
+        position: absolute;
+        top: 2px;
+        right: 7px;
+        color: #07A287;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+.HeadDash-right {
+    float: right;
+    padding: 7px 5px;
+}
+    /*Header Lead AddNewLead CSS End*/
+
+    /*Header Lead Modal Css Start*/
+    .HeadDash-right input {
+        position: relative;
+        background-color: #FFFFFF;
+        border: 1px solid #07A287;
+        border-radius: 3px;
+        width: 175px;
+        height: 43px;
+        color: #787878;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .HeadDash-right .Sear i {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        color: #07A287;
+        cursor: pointer;
+    }
+
+.Lead-Modal .Apply-Filt {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+
+.Lead-Modal .Apply {
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.Lead-Modal .Reset {
+    color: #07A287;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+    float: right;
+}
+
+.Lead-Modal .Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.Lead-Modal .modal-header {
+    padding: 15px 15px 8px 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Lead-Modal .Search-all:first-child {
+    margin-top: 0;
+}
+
+.Lead-Modal .Search-all {
+    display: block;
+    color: #4A494A;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 16px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.Lead-Modal .CloseRight {
+    float: right;
+}
+
+.Lead-Modal .Search-all i:focus {
+    color: #07A287;
+}
+
+.Lead-Modal .Search-all i:hover {
+    color: #07A287;
+}
+
+.Lead-Modal .modal-content {
+    border-radius: 0;
+}
+
+.Lead-Modal .modal-dialog {
+    width: 300px !important;
+    margin-right: 0;
+    margin-top: 110px;
+}
+
+#Host span {
+    font-size: 13px;
+}
+
+.Lead-Modal .Search {
+    background-color: #FAFAFA;
+    color: #404040;
+    border: 1px solid #CCC;
+    width: 100%;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 13px;
+}
+
+    .Lead-Modal .Search:focus {
+        outline: none;
+    }
+
+.Lead-Modal .SearchIcon {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.Lead-Modal .Search-all:hover {
+    color: #07A287;
+}
+
+.Lead-Modal .Search-all:focus {
+    color: #07A287;
+}
+
+.Lead-Modal .Ex-btn {
+    background-color: #CBE0F1;
+    border: 1px solid #0076FF;
+    border-radius: 14.5px;
+    width: 116px;
+    padding: 5px;
+    text-align: center;
+    height: 25px;
+    color: #1674E2;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+}
+
+.Lead-Modal .Ex-btn1 {
+    background-color: #CBF1E9;
+    border: 1px solid #2D8F7B;
+    border-radius: 14.5px;
+    width: 116px;
+    height: 25px;
+    color: #2D8F7B;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+    margin: 0;
+    padding: 5px;
+}
+
+.Lead-Modal .Ex-btn2 {
+    background-color: #CBF1E9;
+    border: 1px solid #2D8F7B;
+    border-radius: 14.5px;
+    width: 116px;
+    height: 25px;
+    color: #2D8F7B;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+    margin: 0;
+    padding: 5px;
+}
+
+.Lead-Modal .Close-btn {
+    background-color: #FF9047;
+    border: 1px solid #FF9047;
+    border-radius: 5px;
+    width: 70px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+}
+
+.Lead-Modal .Open-btn {
+    background-color: #0091FF;
+    border: 1px solid #0091FF;
+    border-radius: 5px;
+    width: 70px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+}
+
+.Lead-Modal .Outline:focus {
+    outline: none;
+}
+
+.Lead-Modal .Sleep-btn {
+    background-color: #979797;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    width: 70px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+}
+
+.Lead-Modal .Date:focus {
+    outline: none;
+}
+
+.Lead-Modal .Date {
+    color: #404040;
+    border-radius: 4px;
+    border: 1px solid #EDEDED;
+    padding: 7px;
+    width: 100%;
+    background: #FFF url("Calendar.png") no-repeat right 10px center;
+    background-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.Lead-Modal .SaPerson:focus {
+    outline: none;
+}
+
+.Lead-Modal .SaPerson {
+    color: #404040;
+    border-radius: 4px;
+    border: 1px solid #EDEDED;
+    padding: 7px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.Lead-Modal .Base .align {
+    width: 275px;
+    float: right;
+    margin-top: 10px;
+}
+
+.Lead-Modal .RelianceLabel input {
+    float: right;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    height: 42px;
+    width: 275px;
+    padding: 10px;
+}
+
+.Lead-Modal .filter-checkbox input + label {
+    position: relative;
+    padding-left: 35px;
+}
+
+    .Lead-Modal .filter-checkbox input + label:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        background-color: #fefefe;
+        border: 1px solid #e0ddd9;
+        left: 0;
+        top: 50%;
+        transform: translateY(-51%);
+        border-radius: 3px;
+    }
+
+    .Lead-Modal .filter-checkbox input + label:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        width: 5px;
+        height: 7px;
+        border: solid #fefefe;
+        border-width: 0 1.5px 1.5px 0;
+        top: 50%;
+        transform: translateY(-65%) rotate(45deg);
+    }
+
+.Lead-Modal .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+}
+
+/*Header Lead Modal Css End*/
+
+/*Logout Modal CSS Start*/
+.Logout-Modal .modal-dialog {
+    max-width: inherit !important;
+    width: 12% !important;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+
+.Logout-Modal .User-Icons {
+    width: 55px;
+    height: 45px;
+    border: 1px solid #4A494A;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+
+.Logout-Modal .welcome {
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    display: block;
+    margin-top: 5px;
+}
+
+.Logout-Modal .logout {
+    background-color: #00B894;
+    border-radius: 2px;
+    width: 70px;
+    height: 26px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    border: none;
+}
+/*Logout Modal CSS End*/
+
+/*Dashboard CSS Start*/
+.DashTable ::-webkit-scrollbar {
+    height: 5px;
+}
+
+.DashTable ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.DashTable ::-webkit-scrollbar-thumb {
+    background: #DCDCDC;
+}
+
+    .DashTable::-webkit-scrollbar-thumb:hover {
+        background: #DCDCDC;
+    }
+
+.DashTable .PeopleTwoHide {
+    position: relative;
+    top: -8px;
+    right: 5px;
+    font-size: 10px;
+    color: #07a287;
+}
+
+.DashTable .ab {
+    color: #4A494A;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+}
+
+.DashTable label {
+    color: #9B9A9B;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 0;
+}
+
+.DashTable .Ex-btn {
+    background-color: #CBE0F1;
+    border: 1px solid #0076FF;
+    border-radius: 14.5px;
+    width: 87px;
+    height: 25px;
+    color: #1674E2;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+    cursor: pointer;
+}
+
+.DashTable .Ex-btn1 {
+    background-color: #CBF1E9;
+    border: 1px solid #2D8F7B;
+    border-radius: 14.5px;
+    width: 116px;
+    height: 25px;
+    color: #2D8F7B;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.DashTable .Close-btn {
+    background-color: #FF9047;
+    border: 1px solid #FF9047;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.DashTable .Open-btn {
+    background-color: #0091FF;
+    border: 1px solid #0091FF;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.DashTable .Outline:focus {
+    outline: none;
+}
+
+.Outline:focus {
+    outline: none;
+}
+
+.DashTable .Sleep-btn {
+    background-color: #979797;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.DashTable .Act {
+    display: block;
+    background-color: #CBF1E9;
+    width: 37px;
+    height: 15px;
+    color: #000000;
+    font-family: Lato;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+}
+
+.DashTable .Inact {
+    display: block;
+    background-color: #FFC7C5;
+    width: 43px;
+    height: 15px;
+    color: #000000;
+    font-family: Lato;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+}
+
+.DashTable .pub-btn {
+    background-color: #CBF1E9;
+    border: 1px solid #CBF1E9;
+    /*width: 51px;*/
+    height: 16px;
+    color: #000000;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    text-align: center;
+    padding: 3px;
+}
+
+.DashTable .unpub-btn {
+    background-color: #FFC7C5;
+    border: 1px solid #FFC7C5;
+    /*width: 68px;*/
+    height: 16px;
+    color: #000000;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 9px;
+    text-align: center;
+    padding: 3px;
+}
+
+.DashTable .table {
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    margin: 0;
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+
+    .DashTable .table > tbody > tr > td {
+        padding: 15px 15px;
+        border-top: 1px solid #EEEEEE;
+        color: #9B9A9B;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        margin: 0;
+    }
+
+    .DashTable .table > thead > tr > th {
+        padding: 15px 15px;
+        border: 0;
+        background-color: #ECF2F4;
+        text-align: left;
+    }
+
+.DashTable {
+    padding: 20px 1.5rem 100px 1.5rem;
+    background-color: #FAFAFA;
+}
+
+    .DashTable .Img {
+        margin: 0 5px;
+        cursor: pointer;
+        width: 16px;
+    }
+
+    .DashTable .Tick {
+        width: 14px;
+        height: 13px;
+    }
+/*Dashboard CSS End*/
+
+/*Dashboard AddConactIcon Modal CSS Start*/
+.People-Modal .Sleep-text {
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 0;
+    float: left;
+}
+.People-Modal .downNewAd {
+    background: #F8F8F8 url("../img/Down.png") no-repeat right 15px center;
+    background-size: 12px;
+}
+.People-Modal .table {
+    margin: 0;
+}
+
+    .People-Modal .table td {
+        padding: 20px 10px;
+        vertical-align: baseline;
+    }
+
+.People-Modal .pad01 {
+    padding: 0 25px !important;
+    color: #9B9A9B;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.People-Modal .table label {
+    color: #3D3D3D;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 0;
+}
+
+.People-Modal .pad02 {
+    padding: 0 15px 0 15px !important;
+}
+
+.People-Modal .text1 {
+    background-color: #F8F8F8;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    width: 180px;
+    color: #3D3D3D;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    /* margin: 10px 10px; */
+    padding: 10px;
+    height: 45px;
+}
+
+.People-Modal select {
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    width: 180px;
+    color: #3D3D3D;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    background: #F8F8F8 url("../img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    /* margin: 10px 10px; */
+    height: 45px;
+    padding: 10px;
+}
+
+.People-Modal .table i {
+    color: #07A287;
+    cursor: pointer;
+}
+
+.People-Modal .Add {
+    margin: 20px 25px;
+}
+
+    .People-Modal .Add button {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 170px;
+        height: 43px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+        padding: 12px 15px;
+    }
+
+.People-Modal .modal-dialog {
+    width: 90% !important;
+    max-width: inherit;
+}
+
+.People-Modal .modal-footer {
+    padding: 0;
+    text-align: right;
+    border: 0;
+}
+
+.People-Modal .modal-body {
+    padding: 0;
+}
+
+.People-Modal .text1:focus {
+    outline: none;
+}
+
+.People-Modal select:focus {
+    outline: none;
+}
+
+.People-Modal .Cross {
+    float: right;
+}
+
+    .People-Modal .Cross i {
+        color: red;
+        cursor: pointer;
+    }
+
+.People-Modal .Img {
+    cursor: pointer;
+}
+
+.People-Modal .modal-header {
+    border: none;
+    display: block;
+}
+
+.People-Modal .table > tbody > tr > td {
+    border-bottom: 1px solid #EDEDED;
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+}
+
+.People-Modal .modal-dialog .table-responsive::-webkit-scrollbar {
+    height: 5px;
+}
+
+.People-Modal .modal-dialog .table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.People-Modal .modal-dialog .table-responsive::-webkit-scrollbar-thumb {
+    background: #DCDCDC;
+}
+
+    .People-Modal .modal-dialog .table-responsive::-webkit-scrollbar-thumb:hover {
+        background: #DCDCDC;
+    }
+
+/*Dashboard AddConactIcon Modal CSS End*/
+
+/*Dashboard SmileIcon Modal CSS Start*/
+.Smile-Modal .modal-dialog {
+    width: 25%;
+    max-width: inherit;
+}
+
+.Smile-Modal .modal-header {
+    padding: 19px 16px 14px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+}
+
+.Smile-Modal .modal-footer {
+    border: none;
+}
+
+.Smile-Modal .modal-body {
+    position: relative;
+    padding: 10px 30px 15px 30px;
+}
+
+.Smile-Modal .CanDone {
+    float: right;
+    display: flex;
+    margin: 0;
+}
+
+.Smile-Modal .Can {
+    background-color: #FFF;
+    border-radius: 4px;
+    width: 100%;
+    color: #07A287;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border: none;
+    padding: 10px 25px;
+}
+
+.Smile-Modal button:focus {
+    outline: none;
+}
+
+.Smile-Modal .Done {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.Smile-Modal .Sleep {
+    float: left;
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17px;
+    margin: 0;
+}
+
+.Smile-Modal .Cross {
+    color: red;
+    float: right;
+    cursor: pointer;
+}
+
+.Smile-Modal .Set {
+    color: #000000;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.Smile-Modal .Email i {
+    font-size: 15px;
+}
+
+.Smile-Modal .input-group-text {
+    padding: 0 10px;
+}
+
+.Smile-Modal .Email-text {
+    border: 1px solid #F3F3F3;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px 20px 8px 10px;
+    color: #000;
+    width: 80%;
+}
+
+    .Smile-Modal .Email-text:focus {
+        outline: none;
+    }
+/*Dashboard SmileIcon Modal CSS End*/
+
+/*Partners-Tab TicketModal CSS Start*/
+.Ticket-Modal .Close {
+    position: absolute;
+    top: 33px;
+    right: 40px;
+    color: red;
+}
+
+.Ticket-Modal .modal-dialog {
+    width: 47%;
+    max-width: inherit !important;
+}
+
+.Ticket-Modal .modal-body {
+    position: relative;
+    padding: 0;
+}
+
+.Ticket-Modal .nav-tabs {
+    padding: 10px 40px 6px 40px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+    .Ticket-Modal .nav-tabs > li > a {
+        margin: 0;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid transparent;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background-color: #F3F3F3;
+        color: #787878;
+        font-family: Roboto;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px 30px 7px 30px;
+    }
+
+        .Ticket-Modal .nav-tabs > li > a.active {
+            cursor: pointer;
+            border-bottom-color: transparent;
+            border: 1px solid #07A287;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: #07A287;
+            color: #FFF;
+            font-family: Roboto;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            padding: 10px 30px 7px 30px;
+        }
+
+.Ticket-Modal .Confi {
+    float: left;
+    padding: 5px 0;
+}
+
+.Ticket-Modal .Publish {
+    float: right;
+    margin: 20px 0 0 0;
+}
+
+.Ticket-Modal .config-offer {
+    color: #777575;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.Ticket-Modal .Partners {
+    color: #07A287;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    display: block;
+    margin-top: 5px;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+/*.Ticket-Modal .Publish .radio-toolbar input[type="radio"] {
+    width: 0;
+    display: none;
+}
+
+    .Ticket-Modal .Publish .radio-toolbar input[type="radio"]:checked + label {
+        background-color: #07A287;
+        border-color: #07A287;
+        color: #FFF;
+    }
+
+.Ticket-Modal .Publish .radio-toolbar label {
+    display: inline-block;
+    text-align: center;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    padding: 7px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 14px;
+    color: #787878;
+    border: 1px solid #EEEEEE;
+    font-weight: 400;
+}
+
+.Ticket-Modal .pub-one {
+    margin-right: -4px;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.Ticket-Modal .pub-two {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}*/
+
+.Ticket-Modal .Border-whole {
+    border: 1px solid #F3F3F3;
+    margin: 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.Ticket-Modal .Reliance {
+    display: block;
+    background-color: #F3F3F3;
+    border-radius: 5px 5px 0 0;
+    color: #404040;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 12px 25px;
+}
+
+.People-Modal .Add button {
+    background-color: #07A287;
+    border-radius: 4px;
+    width: 170px;
+    height: 43px;
+    border: none;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    cursor: pointer;
+    padding: 12px 15px;
+}
+
+.Ticket-Modal .Down {
+    width: 16px;
+    float: right;
+    margin-top: 3px;
+}
+
+.Ticket-Modal .RelianceLabel {
+    padding: 15px 25px;
+}
+
+    .Ticket-Modal .RelianceLabel .Base {
+        display: block;
+        height: 42px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+        .Ticket-Modal .RelianceLabel .Base label {
+            margin: 13px 0;
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+.Ticket-Modal .Base1 {
+    float: right;
+    text-align: left;
+    width: 275px;
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+.Ticket-Modal .top {
+    float: right;
+    width: 275px;
+    height: 42px;
+}
+
+.Ticket-Modal .male {
+    margin: -5px 20px 0 0;
+    display: inline-block;
+    height: 42px;
+    padding: 0;
+}
+
+    .Ticket-Modal .male label {
+        position: relative;
+        margin-bottom: 0;
+    }
+
+        .Ticket-Modal .male label:before {
+            content: " ";
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            margin: 0 5px 0 0;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            border: 1px solid #00C599;
+            background-color: transparent;
+        }
+
+    .Ticket-Modal .male input[type='radio'] {
+        display: none;
+    }
+
+.Ticket-Modal .RelianceLabel input {
+    float: right;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    height: 42px;
+    width: 275px;
+    padding: 10px;
+}
+
+    .Ticket-Modal .RelianceLabel input:focus {
+        outline: none;
+    }
+
+.Ticket-Modal .malebtn {
+    display: inherit;
+}
+
+.People-Modal .Cross i {
+    color: red;
+    cursor: pointer;
+}
+
+.People-Modal .Img {
+    cursor: pointer;
+}
+
+.People-Modal .modal-header {
+    border: none;
+}
+
+.Ticket-Modal .maletext {
+    color: #606060;
+}
+
+.Ticket-Modal .male label input[type='radio']:checked + div span {
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    display: block;
+    background-color: #00C599;
+}
+
+.Ticket-Modal .RelianceLabel .addon {
+    float: right;
+    display: flex;
+    width: 275px;
+}
+
+.Ticket-Modal .Border-whole {
+    border: 1px solid #F3F3F3;
+    margin: 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.Ticket-Modal .input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.Ticket-Modal .Base .align {
+    width: 275px;
+    float: right;
+    margin-top: 10px;
+}
+
+.Ticket-Modal .filter-checkbox input + label {
+    position: relative;
+    padding-left: 35px;
+}
+
+    .Ticket-Modal .filter-checkbox input + label:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        background-color: #fefefe;
+        border: 1px solid #e0ddd9;
+        left: 0;
+        top: 50%;
+        transform: translateY(-51%);
+        border-radius: 3px;
+    }
+
+    .Ticket-Modal .filter-checkbox input + label:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        width: 5px;
+        height: 7px;
+        border: solid #fefefe;
+        border-width: 0 1.5px 1.5px 0;
+        top: 50%;
+        transform: translateY(-65%) rotate(45deg);
+    }
+
+.Ticket-Modal .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+}
+
+.Ticket-Modal .FlipLabel .Base {
+    height: 45px;
+}
+
+.Ticket-Modal .Reli {
+    display: block;
+    color: #787878;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.Ticket-Modal .ExRatio {
+    height: 80px !important;
+    margin: 20px 0;
+}
+
+.Ticket-Modal .card-ab {
+    width: 25.5%;
+    display: grid;
+    float: right;
+    text-align: center;
+}
+
+.Ticket-Modal .a1 {
+    padding: 20px 22px;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px 3px 0 0;
+    text-align: center;
+}
+
+.Ticket-Modal .a2 {
+    border: 1px solid red;
+    padding: 5px 10px;
+    background-color: #F3F3F3;
+    border: 1px solid #E4E4E4;
+    border-radius: 0 0 3px 3px;
+    color: #9A9A9A;
+    text-align: center;
+}
+
+.Ticket-Modal .DotA {
+    float: right;
+    padding: 35px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Ticket-Modal .Border-whole1 {
+    border: 1px solid #F3F3F3;
+    padding: 20px 0;
+}
+
+.Ticket-Modal .formula {
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 0;
+}
+
+.Smile-Modal .Email i {
+    font-size: 15px;
+}
+
+.Smile-Modal .input-group-text {
+    padding: 0 10px;
+}
+
+.Ticket-Modal .formula1 {
+    color: red;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    font-style: italic;
+    margin: 0;
+}
+
+.Ticket-Modal .CloseModal i {
+    float: right;
+    color: red;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.StatDrop {
+    display: inline-block;
+    margin-top: 60px;
+}
+
+    .StatDrop .dropdown {
+        display: inline-block;
+    }
+
+.dropdo:focus {
+    outline: none;
+}
+
+.dropdo:active:focus, .dropdo:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*.btn:active {
+    background-image: #dbe4e7 url("../img/Down.png") no-repeat right 12px center;
+}*/
+
+.StatDrop .dropdo {
+    background-color: #EEEEEE;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    padding: 10px 70px 10px 15px;
+    height: 38px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    background: #EEEEEE url("../img/Down.png") no-repeat right 12px center;
+    background-size: 14px;
+}
+
+.StatDrop .dropdown-toggle::after {
+    display: none;
+}
+
+.StatDrop .dropdown-menu {
+    min-width: 135px;
+    padding: 5px 12px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+    .StatDrop .dropdown-menu .Publish {
+        display: block;
+        color: #07A287;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+        margin: 3px 0;
+        text-align: left;
+        float: left;
+    }
+
+.NewRadioOffer input[type=radio] {
+    display: none;
+}
+
+.NewRadioOffer input + label {
+    position: relative;
+    padding-left: 25px !important;
+}
+
+.NewRadioOffer .logout-label1 {
+    cursor: pointer;
+    padding: 5px 10px 5px 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #787878;
+    border-radius: 4px;
+    color: #787878;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-right: 7px;
+}
+
+.NewRadioOffer input + label:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #787878;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    left: 8px;
+    top: 6px;
+}
+
+.NewRadioOffer input:checked + label {
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    color: #07A287;
+}
+
+    .NewRadioOffer input:checked + label:before {
+        background-color: #07A287;
+        border: 0px double #07A287;
+    }
+
+.StatDrop .Save {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    margin-right: 5px;
+}
+
+Smile-Modal .Email-text:focus {
+    outline: none;
+}
+/*Dashboard SmileIcon Modal CSS End*/
+
+
+#grad1 {
+    background-color: : #9C27B0;
+    background-image: linear-gradient(120deg, #FF4081, #81D4FA)
+}
+
+#msform {
+    position: relative;
+    margin-top: 20px
+}
+
+    #msform fieldset .form-card {
+        background: white;
+        border: 0 none;
+        border-radius: 0px;
+        /*box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);*/
+        padding: 10px 0;
+        box-sizing: border-box;
+        margin: 0;
+        position: relative
+    }
+
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20px;
+        position: relative
+    }
+
+        #msform fieldset:not(:first-of-type) {
+            display: none
+        }
+
+        #msform fieldset .form-card {
+            text-align: left;
+            color: #9E9E9E
+        }
+
+
+
+    #msform input:focus,
+    #msform textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: none;
+        font-weight: bold;
+        border-bottom: 2px solid skyblue;
+        outline-width: 0
+    }
+
+    #msform .action-button {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 161px;
+        color: #fff;
+        float: right;
+        border: none;
+        height: 43px;
+    }
+
+        #msform .action-button:hover,
+        #msform .action-button:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+        }
+
+    #msform .action-button-previous {
+        width: 100px;
+        background: #616161;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px
+    }
+
+        #msform .action-button-previous:hover,
+        #msform .action-button-previous:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+        }
+
+.action-button-can {
+    color: #07A287;
+    background: none;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    float: right;
+    height: 43px;
+    width: 100px;
+}
+
+    .action-button-can:hover,
+    .action-button-can:focus {
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+#progressbar .active:last-child {
+    width: 22%;
+}
+
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px
+}
+
+    select.list-dt:focus {
+        border-bottom: 2px solid skyblue
+    }
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    color: lightgrey;
+    display : flex;
+}
+
+    #progressbar .active {
+        color: #07A287;
+        text-transform: uppercase;
+        /*width: 19%;*/
+        font-size: 13px;
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 22%;
+        float: left;
+        position: relative
+    }
+
+    #progressbar li {
+        color: #414141;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    #progressbar #account:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar #personal:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar #brandConfig:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar #partnerSetting:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar #voucherConfig:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar #voucherConfig:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar #voucherGen:before {
+        font-family: FontAwesome;
+        content: ""
+    }
+
+    #progressbar li:before {
+        width: 20px;
+        height: 20px;
+        line-height: 45px;
+        display: block;
+        font-size: 18px;
+        color: #ffffff;
+        background: #E2E2E2;
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+        padding: 2px
+    }
+
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #E2E2E2;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        z-index: -1;
+    }
+
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #07A287
+    }
+
+    #progressbar li strong {
+        position: absolute;
+        width: 111%;
+        top: -25px;
+        left: 0;
+    }
+
+.radio-group {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.radio {
+    display: inline-block;
+    width: 204px;
+    height: 104px;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 8px 2px
+}
+
+    .radio:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+    }
+
+    .radio.selected {
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+    }
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+/*Partners-Tab TicketModal CSS End*/
+/*Setting Header CSS Start*/
+.SettHead .nav-tabs > li > a {
+    color: #666;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 19px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.SettHead .nav-tabs > li.active > a {
+    color: #07A287;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 19px;
+    text-align: left;
+}
+/*Setting Header Css End*/
+
+/*Setting UserTab Css Start*/
+.DashTable .Img {
+    margin: 0 5px;
+    cursor: pointer;
+    width: 16px;
+}
+
+.DownImg {
+    cursor: pointer;
+    margin: 0 2px;
+    width: 12px;
+}
+
+.User-se .wid {
+    width: 150px;
+}
+
+.EMD .modal-dialog {
+    position: relative;
+    width: 200px !important;
+    max-width: inherit;
+    margin-left: 305px;
+    margin-top: 200px;
+}
+
+.EMDNEW1 .modal-dialog {
+    position: relative;
+    width: 200px !important;
+    max-width: inherit;
+    margin-right: 150px;
+    margin-top: 200px;
+}
+
+.EditBrand-Modal .AllCheckbox {
+    max-height: 190px;
+    overflow: auto;
+}
+
+.EditBrand-Modal .filter-checkbox input + label {
+    position: relative;
+    padding-left: 23px;
+    margin: 0 0 4px 0;
+}
+
+    .EditBrand-Modal .filter-checkbox input + label:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        background-color: #fefefe;
+        border: 1px solid #00C599;
+        left: 0;
+        top: 50%;
+        transform: translateY(-51%);
+        border-radius: 0;
+    }
+
+.EditBrand-Modal .AllCheckbox .Al {
+    color: #9B9A9B;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.EditBrand-Modal .filter-checkbox input + label:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    width: 5px;
+    height: 7px;
+    border: solid #fefefe;
+    border-width: 0 1.5px 1.5px 0;
+    top: 50%;
+    transform: translateY(-65%) rotate(45deg);
+}
+
+.EditBrand-Modal .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+    border: 1px solid #00C599;
+}
+
+.EditBrand-Modal .AllCheckbox::-webkit-scrollbar {
+    width: 10px;
+}
+
+.EditBrand-Modal .AllCheckbox::-webkit-scrollbar-track {
+    background: #cac8c8;
+    border-radius: 10px;
+}
+
+.EditBrand-Modal .AllCheckbox::-webkit-scrollbar-thumb {
+    background: #a5a3a3;
+    border-radius: 10px;
+}
+
+.EditBrand-Modal .Reset {
+    color: #07A287;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+    float: right;
+}
+
+.EditBrand-Modal .Refresh i {
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.EditBrand-Modal .Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.EditBrand-Modal .Apply-Filt {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}
+/*Setting UserTab Css End*/
+
+/*Add New User Css Start*/
+.breadcrums-new label {
+    margin: 0;
+    color: #4A494A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+    line-height: 17px;
+    text-align: left;
+}
+
+.breadcrums-new {
+    padding: 16px 15px;
+}
+
+    .breadcrums-new a {
+        color: #07A287;
+    }
+
+.Settin {
+    float: right;
+    padding: 7px 5px;
+    /* display: none; */
+}
+
+    .Settin .AddNew {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 110px;
+        height: 43px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+    }
+
+        .Settin .AddNew:focus {
+            outline: none;
+        }
+
+.card-Ad-User {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 10px;
+}
+
+    .card-Ad-User .Padding label {
+        display: block;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .card-Ad-User .Padding input:focus {
+        outline: none;
+    }
+
+    .card-Ad-User .Padding input {
+        border: 1px solid #E4E4E4;
+        border-radius: 3px;
+        width: 100%;
+        height: 42px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 10px;
+        margin-bottom: 22px;
+    }
+
+    .card-Ad-User .Padding select:focus {
+        outline: none;
+    }
+
+    .card-Ad-User .Padding {
+        padding: 30px 30px 20px 30px;
+    }
+
+        .card-Ad-User .Padding select {
+            border: 1px solid #E4E4E4;
+            border-radius: 3px;
+            width: 100%;
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            background: #FFF url("../img/Down.png") no-repeat right 15px center;
+            -webkit-appearance: none;
+            background-size: 12px;
+            height: 42px;
+            padding: 10px;
+        }
+
+    .card-Ad-User .Detail {
+        color: #07A287 !important;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold !important;
+        line-height: 17px;
+        text-align: left;
+        margin: 0 0 15px 0 !important;
+    }
+
+    .card-Ad-User .Save {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 161px;
+        height: 43px;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        border: 1px solid #07A287;
+    }
+
+        .card-Ad-User .Save:focus {
+            outline: none;
+        }
+
+    .card-Ad-User .Cancel:focus {
+        outline: none;
+    }
+
+    .card-Ad-User .Cancel {
+        background-color: #FFF;
+        border: none;
+        border-radius: 4px;
+        width: 161px;
+        height: 43px;
+        color: #07a287;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .card-Ad-User .marg {
+        margin: 100px 15px 35px 0;
+    }
+
+.marg .savcan {
+    float: right;
+}
+
+.card-Ad-User .dashallbrand {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    background: #FFF url("../img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    height: 42px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card-Ad-User .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.card-Ad-User .dashallbrand:focus {
+    outline: none;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input + label {
+    position: relative;
+    padding-left: 25px;
+    margin: 0 13px 12px 13px;
+}
+
+.card-Ad-User .dropdown .AllCheckbox {
+    padding: 10px;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input + label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-color: #fefefe;
+    border: 1px solid #00C599;
+    left: 0;
+    top: 50%;
+    transform: translateY(-51%);
+    border-radius: 0;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+    border: 1px solid #00C599;
+}
+
+.card-Ad-User .dropdown .Apply-Filt:focus {
+    outline: none;
+}
+
+.card-Ad-User .dropdown .Apply-Filt {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.card-Ad-User .dropdown .Search {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    height: 42px;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+}
+
+.card-Ad-User .dropdown .BottomBorder {
+    border-bottom: 2px solid #EDEDED;
+    padding: 4px 15px 12px;
+}
+
+.card-Ad-User .dropdown .Apply {
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.card-Ad-User .dropdown .Reset {
+    color: #07A287;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.card-Ad-User .dropdown .Refresh i {
+    color: #07A287;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.card-Ad-User .dropdown .reset {
+    color: #07A287;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+.card-Ad-User .dropdown .Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.card-Ad-User .PaddNew {
+    padding: 30px 25px 20px 0px;
+    ;
+}
+
+.Publish-Edit {
+    /* float: right; */
+    margin: 10px 0 0 0;
+}
+
+.card-Ad-User .Padding input:focus {
+    outline: none;
+}
+
+.card-Ad-User .Padding input {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    height: 42px;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 10px;
+    margin-bottom: 22px;
+}
+
+.Publish-Edit .radio-toolbar input[type="radio"] {
+    width: 0;
+    display: none;
+}
+
+.Publish-Edit .radio-toolbar label {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 4px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 14px;
+    color: #787878;
+    border: 1px solid #07A287;
+    margin: 0 5px;
+    width: 85px;
+    height: 90px;
+}
+
+.Publish-Edit .img {
+    width: 20px;
+    height: 20px;
+    margin: 12px 5px;
+}
+
+.Publish-Edit span {
+    display: block;
+    color: #07A287;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.Publish-Edit .radio-toolbar input[type="radio"]:checked + label {
+    background-color: #07A287;
+    border-color: #07A287;
+}
+
+    .Publish-Edit .radio-toolbar input[type="radio"]:checked + label span {
+        color: #FFF;
+    }
+
+.PaddNew .pub-one {
+    border-radius: 10px !important;
+}
+
+.card-Ad-User .dashallbrand {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    background: #FFF url("img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    height: 42px;
+    padding: 10px;
+    text-align: left;
+}
+
+    .card-Ad-User .dashallbrand:focus {
+        outline: none;
+    }
+
+.card-Ad-User .dropdown .filter-checkbox input + label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-color: #fefefe;
+    border: 1px solid #00C599;
+    left: 0;
+    top: 50%;
+    transform: translateY(-51%);
+    border-radius: 0;
+}
+
+.card-Ad-User .dropdown .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+    border: 1px solid #00C599;
+}
+
+.filter-checkbox input + label:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    width: 5px;
+    height: 7px;
+    border: solid #fefefe;
+    border-width: 0 1.5px 1.5px 0;
+    top: 50%;
+    -webkit-transform: translateY(-65%) rotate(45deg);
+    transform: translateY(-65%) rotate(45deg);
+}
+
+.filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+}
+
+.filter-checkbox input + label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.card-Ad-User .Padding select {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    background: #FFF url("../img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    height: 42px;
+    padding: 10px;
+}
+
+.brandscategory ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+    .brandscategory ul li {
+        background-color: #FFFFFF;
+        border: 1px solid #07A287;
+        border-radius: 8px;
+        padding: 5px;
+        margin-right: 10px;
+        color: #9B9A9B;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+    }
+
+.brandscategory {
+    margin-top: 10px;
+}
+
+.Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*Add New User Css End*/
+
+/*Api Log Css Start*/
+
+.ApiLog {
+    width: 86%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+    .ApiLog .table {
+        border: 1px solid #F0F0F0;
+        border-radius: 4px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid #F0F0F0;
+    }
+
+    .ApiLog thead {
+        background-color: #ECF2F4;
+        border: none;
+    }
+
+    .ApiLog .table thead th {
+        vertical-align: bottom;
+        width: 250px;
+        padding: 15px 30px;
+        color: #4A494A;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 16px;
+    }
+
+    .ApiLog .table th {
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .ApiLog tbody {
+        background-color: #262821;
+    }
+
+    .ApiLog .table .Border {
+        border-bottom: 1px solid #191C12;
+    }
+
+    .ApiLog .tabledata label {
+        color: #9B9A9B;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .ApiLog .table .tabledata .yellow {
+        color: yellow;
+    }
+
+    .ApiLog .table .tabledata .blue {
+        color: rgb(73, 31, 226);
+    }
+
+    .ApiLog .table .tabledata .green {
+        color: #84C140;
+    }
+
+    .ApiLog .table > tbody > tr > td {
+        border: none;
+        padding: 20px 41px 35px 41px;
+    }
+
+/*Api Log Css End*/
+
+/*Roles Css Start*/
+
+.RoleHead .breadcrums-new {
+    padding: 16px 15px;
+}
+
+.MarPadd ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .MarPadd ul li {
+        display: inline-block;
+    }
+
+.cirtop {
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.chtop {
+    margin-top: 10px;
+    float: right;
+}
+
+.RoleHead .breadcrums-new label {
+    margin: 0;
+    color: #4A494A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+    line-height: 17px;
+    text-align: left;
+}
+
+.RoleHead .breadcrums-new a {
+    color: #07A287;
+}
+
+.RoleHead .Settin {
+    float: right;
+    padding: 7px 5px;
+}
+
+    .RoleHead .Settin .AddNew {
+        background-color: #07A287;
+        border-radius: 4px;
+        width: 110px;
+        height: 43px;
+        border: none;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        cursor: pointer;
+    }
+
+.Card-Role-Add {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 10px;
+}
+
+.card-permission {
+    background-color: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    margin: 170px 40px 0 0;
+}
+
+    .card-permission .Permi {
+        color: #07A287;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: left;
+        margin: 0;
+    }
+
+        .card-permission .Permi .Sett {
+            color: rgba(0,0,0,0.5);
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+            line-height: 19px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+    .card-permission .CheckAll {
+        float: right;
+        color: #07A287;
+        font-size: 14px;
+    }
+
+    .card-permission .MarPadd {
+        padding: 20px 0;
+        border-bottom: 1px solid #D0D0D0;
+        margin: 0 25px;
+    }
+
+.CheckAll .filter-checkbox input + label {
+    position: relative;
+    padding-left: 35px;
+}
+
+    .CheckAll .filter-checkbox input + label:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        background-color: #fefefe;
+        border: 1px solid #00C599;
+        left: 0;
+        top: 50%;
+        transform: translateY(-51%);
+        border-radius: 3px;
+    }
+
+    .CheckAll .filter-checkbox input + label:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        width: 5px;
+        height: 7px;
+        border: solid #fefefe;
+        border-width: 0 1.5px 1.5px 0;
+        top: 50%;
+        transform: translateY(-65%) rotate(45deg);
+    }
+
+.CheckAll .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+}
+
+.card-permission .MarPadd .Circle {
+    background: #F3F3F3;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4px 9px 9px 9px;
+}
+
+.ViewPage {
+    color: #404040;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.ViewPagetext {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 0;
+    text-align: left;
+    display: block;
+    margin-left: 10px;
+}
+
+.Card-Role-Add .UsRole {
+    color: #07A287;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+    margin: 0 0 15px 0;
+}
+
+.Card-Role-Add .UsTypeText {
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+}
+
+.UsType select:focus {
+    outline: none;
+}
+
+.UsType select {
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    width: 100%;
+    text-transform: capitalize;
+    color: #3D3D3D;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    background: #FFF url("../img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    height: 42px;
+    padding: 10px;
+    display: block;
+}
+
+.ListItem {
+    list-style: none;
+    padding: 0;
+    margin: 30px 15px 40px 30px;
+    border-right: 1px solid #E3E3E3;
+    height: auto;
+}
+
+    .ListItem li label:focus {
+        color: #07A287;
+    }
+
+    .ListItem li label:hover {
+        color: #07A287;
+    }
+
+    .ListItem li label {
+        color: #404040;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+        line-height: 19px;
+        text-align: left;
+        margin: 8px 0;
+        cursor: pointer;
+    }
+
+    .ListItem .ImgAll {
+        width: 15px;
+        height: 17px;
+        cursor: pointer;
+        margin: 0 5px 0 0;
+    }
+
+.Card-Role-Add .nav-tabs > li > a {
+    margin: 0;
+    color: #404040;
+    line-height: 1.42857143;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.ListItem .card-body .nav li {
+    position: relative;
+    display: contents;
+}
+
+.Card-Role-Add .nav-tabs > li.active > a {
+    background-color: #07A287;
+    color: #FFF;
+    border: none;
+}
+
+.Card-Role-Add .nav-tabs {
+    border: none;
+}
+
+.Plus {
+    float: right;
+    margin: 10px 25px 0 0;
+    color: #07a287;
+}
+
+/*Roles Css End*/
+
+/*API Log Filter Css Start*/
+.Sett-Lead-Modal .calenNewinput {
+    height: 35px;
+    padding: 3px 10px;
+    border: 1px solid #E4E4E4;
+    background: #E4E4E4;
+    border-radius: 4px;
+}
+
+.Sett-Lead-Modal .Apply-Filt {
+    background-color: #07A287;
+    border: 1px solid #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Sett-Lead-Modal .Apply {
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.Sett-Lead-Modal .Reset {
+    color: #07A287;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: inline-block;
+    float: right;
+}
+
+.Sett-Lead-Modal .Cancel i {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.Sett-Lead-Modal .modal-header {
+    padding: 15px 15px 8px 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Sett-Lead-Modal .Search-all:first-child {
+    margin-top: 0;
+}
+
+.Sett-Lead-Modal .Search-all {
+    display: block;
+    color: #07A287;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 16px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.Sett-Lead-Modal .CloseRight {
+    float: right;
+}
+
+.Sett-Lead-Modal .Search-all i:focus {
+    color: #07A287;
+}
+
+.Sett-Lead-Modal .Search-all i:hover {
+    color: #07A287;
+}
+
+.Sett-Lead-Modal .modal-content {
+    border-radius: 0;
+}
+
+.Sett-Lead-Modal .modal-dialog {
+    width: 300px !important;
+    margin-top: 105px;
+    margin-right: 0;
+}
+
+
+.Sett-Lead-Modal .CheckAll .filter-checkbox input + label {
+    position: relative;
+    padding-left: 25px;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+}
+
+    .Sett-Lead-Modal .CheckAll .filter-checkbox input + label:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        background-color: #fefefe;
+        border: 1px solid #00C599;
+        left: 0;
+        top: 50%;
+        transform: translateY(-51%);
+        border-radius: 3px;
+    }
+
+    .Sett-Lead-Modal .CheckAll .filter-checkbox input + label:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        width: 5px;
+        height: 7px;
+        border: solid #fefefe;
+        border-width: 0 1.5px 1.5px 0;
+        top: 50%;
+        transform: translateY(-65%) rotate(45deg);
+    }
+
+.Sett-Lead-Modal .CheckAll .filter-checkbox input:checked + label:before {
+    background-color: #00C599;
+}
+
+.MethodSelect .open > .dropdown-menu {
+    display: grid;
+}
+
+.MethodSelect .dropdown-menu {
+    left: -25px !important;
+    min-width: 267px;
+}
+
+.MethodSelect .dropdown-item {
+    padding: 5px 10px;
+    color: #404040;
+    margin-bottom: 0;
+}
+
+.MethodSelect .Down {
+    width: 15px;
+    height: 10px;
+}
+
+.MethodSelect .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.MethodSelect .input-group:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.MethodSelect .btn {
+    border: 1px solid #CCC;
+}
+
+    .MethodSelect .btn:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+.Sett-Lead-Modal .DateImg {
+    width: 18px;
+    height: 18px;
+}
+
+.Sett-Lead-Modal .Date {
+    width: 84%;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    height: 35px;
+}
+
+    .Sett-Lead-Modal .Date:focus {
+        outline: none;
+    }
+
+/*API Log Filter Css End*/
+table.dataTable thead .sorting:after {
+    content: "" !important;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "" !important;
+}
+
+.table-bordered td, .table-bordered th {
+    border: none !important;
+}
+
+table.dataTable.no-footer {
+    border: none !important;
+}
+
+/*Button Status Filter Css Start*/
+.StaDrop {
+    float: right;
+    padding-top: 9px;
+}
+
+    .StaDrop label {
+        color: #000;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+.statusdisplay {
+    border: 1px solid #979797;
+    border-radius: 4px;
+    padding: 7px 45px 7px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    background: none;
+    color: #4A4A4A;
+    font-weight: 600;
+    background: #FFF url("../img/Down.png") no-repeat right 15px center;
+    background-size: 12px;
+}
+
+.StatusOption-Modal .Change {
+    color: #000000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+}
+
+.StatusOption-Modal .Cancel {
+    color: #C83A3A;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    float: right;
+}
+
+.StatusOption-Modal .Btnradio label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 1px solid #00C599;
+    background-color: transparent;
+}
+
+.StatusOption-Modal .Btnradio input[type='radio'] {
+    display: none;
+}
+
+.StatusOption-Modal .malebtn {
+    display: inherit;
+}
+
+.StatusOption-Modal .Btnradio label input[type='radio']:checked + div span {
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    display: block;
+    background-color: #00C599;
+}
+
+.StatusOption-Modal .radio-inline {
+    padding: 0 !important;
+    margin: 0;
+    display: block;
+}
+
+.StatusOption-Modal .Close-btn {
+    background-color: #FF9047;
+    border: 1px solid #FF9047;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+}
+
+.StatusOption-Modal .Publish-btn {
+    background-color: #09C1A1;
+    border: 1px solid #09C1A1;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+}
+
+.StatusOption-Modal .Sleep-btn {
+    background-color: #9A9A9A;
+    border: 1px solid #9A9A9A;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+}
+
+.StatusOption-Modal .Termi-btn {
+    background-color: #E05050;
+    border: 1px solid #E05050;
+    border-radius: 5px;
+    width: 89px;
+    height: 21px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+}
+
+.StatusOption-Modal .Outline:focus {
+    outline: none;
+}
+
+.StatusOption-Modal .Apply-Filt {
+    background-color: #07A287;
+    border-radius: 4px;
+    width: 100%;
+    height: 43px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #07A287;
+}
+
+.StatusOption-Modal .modal-body {
+    position: relative;
+    padding: 10px;
+}
+
+.StatusOption-Modal .modal-dialog {
+    width: 16%;
+    max-width: inherit !important;
+    margin-right: -5px;
+    margin-top: 150px;
+}
+
+.StatusOption-Modal .modal-header {
+    padding: 15px 15px 7px 15px;
+}
+/*Button Status Filter Css End*/
+
+/*Pagination CSS*/
+.dataTables_wrapper .dataTables_length {
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+.custom-select-sm {
+    margin: 0 5px 0 5px;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 8px;
+    font-size: 13px;
+    color: #9B9A9B;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 !important;
+    margin: 0;
+}
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        background: none !important;
+        border: 1px solid #007bff !important;
+        border-radius: 4px;
+    }
+
+.page-link:focus .paginate_button {
+    border: 1px solid #007bff !important;
+    box-shadow: none;
+}
+
+.page-link {
+    position: relative;
+    font-size: 13px;
+    color: #9B9A9B !important;
+    display: block;
+    padding: 5px 8px;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link {
+    color: #FFF !important;
+}
+/*Pagination CSS*/
+
+.MethodSelect .dropdown-toggle::after {
+    display: none;
+}
+
+.Sear {
+    position: relative;
+}
+
+.multisele .multiselect-container > li > a > label > input[type=checkbox] {
+    margin-bottom: 0px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+.multisele .multiselect-container > li > a > label {
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.multisele .multiselect-all > label {
+    padding: 0 10px !important;
+}
+
+.multisele .multiselect-container {
+    width: 245px;
+}
+
+.multisele .multiselect-native-select .btn {
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    width: 100%;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    background: #FFF url("../img/Down.png") no-repeat right 15px center;
+    -webkit-appearance: none;
+    background-size: 12px;
+    height: 42px;
+    padding: 10px;
+    text-align: left;
+}
+
+.multisele .btn-group {
+    display: block;
+}
+
+.multisele .input-group-btn {
+    display: none;
+}
+
+.multisele .dropdown-toggle::after {
+    display: none;
+}
+
+.multisele .multiselect-search {
+    margin: 12px 12px;
+    border-radius: 6px;
+}
+
+.plus {
+    width: 12px;
+}
+
+.dropdown1 {
+    position: relative;
+    width: 200px;
+}
+
+    .dropdown1 select {
+        width: 100%;
+    }
+
+    .dropdown1 > * {
+        box-sizing: border-box;
+        height: 1.5em;
+    }
+
+    .dropdown1 input {
+        position: absolute;
+        width: calc(100% - 20px);
+    }
+
+.select-editable {
+    position: relative;
+    background-color: white;
+    border: solid grey 1px;
+    width: 120px;
+    height: 18px;
+}
+
+    .select-editable select {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 14px;
+        border: none;
+        width: 120px;
+        margin: 0;
+    }
+
+    .select-editable input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        padding: 1px;
+        font-size: 12px;
+        border: none;
+    }
+
+        .select-editable select:focus, .select-editable input:focus {
+            outline: none;
+        }
+
+table.dataTable tbody tr {
+    background-color: #FFF !important;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.HeadDash-right .Search {
+    width: 240px;
+}
+
+.Error {
+    text-align: center;
+    margin: 10% 0;
+}
+
+    .Error .Reload {
+        background-color: #07A287;
+        border: 1px solid #07A287;
+        border-radius: 4px;
+        width: 110px;
+        height: 40px;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+    }
+
+        .Error .Reload:focus {
+            outline: none;
+        }
+
+    .Error .BackToMain:focus {
+        outline: none;
+    }
+
+    .Error .BackToMain {
+        background-color: #FFF;
+        border: 1px solid #07A287;
+        border-radius: 4px;
+        width: 110px;
+        height: 40px;
+        color: #07A287;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .Error .ErImg {
+        width: 100px;
+    }
+
+    .Error h1 {
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 17px;
+        margin: 30px 0 12px 0;
+    }
+
+    .Error p {
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 17px;
+        margin: 0 0 10px 0;
+    }
+
+.no-rec {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .no-rec p {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+.show-err {
+    display: none;
+}
+
+div.ex1 {
+   width: auto;
+   height: 69vh;
+   overflow: auto;
+}
+
+.buttonload {
+    /*background-color: #4CAF50;*/
+    /*color: white;*/
+    /*font-size: 16px;*/
+}
+
+.custom-header {
+    max-width: 392px;
+    width: 392px;
+    word-break: break-all;
+    white-space: normal !important;
+}
+
+#tbl_APILogsListing_previous, #tbl_APILogsListing_next {
+    font-size: 12px;
+    color: #9B9A9B !important;
+    padding: 5px 8px !important;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.addcontact-err {
+    margin-left: 409px;
+    font-size: inherit;
+}
+
+/*.a.paginate_button.current {
+    background-color: #007bff;
+    border-color: #007bff;
+}*/
+
+.NewPublishQ .radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.NewPublishQ .radio-toolbar label {
+    display: inline-block;
+    text-align: center;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-family: sans-serif, Arial;
+    font-size: 14px;
+    color: #787878;
+    border: 1px solid #EEEEEE;
+}
+
+.NewPublishQ .pub-one {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    width: 110px;
+}
+
+.NewPublishQ .pub-two {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    width: 110px;
+    margin-left: -5px;
+}
+
+.NewPublishQ .radio-toolbar input[type="radio"]:checked + label {
+    background-color: #07A287;
+    border-color: #07A287;
+    color: #FFF;
+    padding: 8px 10px;
+}
+
+.NewPublishQ {
+    margin: 20px 0 0 0;
+}
+
+.ExRadio input[type="radio"] {
+    width: 0;
+    display: none;
+}
+
+.ExRadio input[type="radio"]:checked + label {
+    background-color: #CBE0F1;
+    border: 1px solid #0076FF;
+    color: #0076FF;
+}
+
+.ExRadio label {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFF;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-family: lato;
+    font-size: 10px;
+    color: #787878;
+    border: 1px solid #B3B3B3;
+    font-weight: 400;
+}
+.dataTables_length label {
+    display: flex;
+    align-items: center;
+}
+
+.next-button {
+    border-radius: 50%;
+    align-items: center;
+    color: white;
+    background-color: #07A287;
+}
+    .next-button:hover {
+        opacity: 0.8;
+    }
+
+.partner-setting-label-text {
+    font-size: 13px;
+    color: #4A4A4A;
+    font-weight: 600;
+}
+.partne-setting-element{
+    display:flex;
+}
+
+.label-custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 0px 20px 12px 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .label-custom-checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #00C599;
+    background-color: white;
+}
+
+/*.label-custom-checkbox:hover input ~ .custom-checkbox {
+    background-color: #00C599;
+    opacity:0.5;
+}*/
+
+.label-custom-checkbox:checked ~ .custom-checkbox {
+/*    background-color: red;*/
+}
+
+.custom-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.label-custom-checkbox input:checked ~ .custom-checkbox:after {
+    display: block;
+}
+
+.label-custom-checkbox .custom-checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #00C599;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkModel-popup {
+    display:flex;
+    justify-content:space-around;
+}
+.checkModel-text {
+    font-size: 13px;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-family:Arial;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+    border: none !important;
+    outline: none !important;
+}
+
+.partnerImage{
+    word-break:break-word;
+}
+
+.dropdown-item{
+    cursor:pointer;
+}
+
+.view-icon,.tab-name{
+    cursor:pointer;
+}
+
+.btn-email,.btn-upload {
+    background-color: #07A287;
+    color: #FCFCFC;
+    cursor:pointer;
+}
+
+.erroMessage{
+    align-self:center;
+}
+
+.form-Input-Height{
+    min-height:97px;
+}
+.row-Height{
+    min-height:114px;
+}
+.point-exchange-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 143px;
+}
+.errorDenomination {
+    display: none;
+/*    margin-left: 30px;*/
+}
+.input-div-height {
+    display: flex;
+    min-height:67px;
+}
+#voucherSkuiId {
+    min-height: 74px;
+}
+#voucherRedeem {
+    display: flex;
+    min-height: 77px;
+}
+#sendAlert{
+    min-height:38px;
+    min-width:100px;
+}
+
+.option-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.partner-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.partner-input-content {
+    width: 40%;
+}
+
+.partner-input-content-btn {
+    height: 40px;
+}
+
+.point-exchange {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.point-exchange-text {
+    width: 20%;
+    margin-top: 20px;
+}
+
+.point-exchange-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-body {
+    margin: 10px 20px;
+    height: 60px;
+    width: 140px;
+    text-align: center;
+}
+
+.readonly {
+    height: 40px;
+    text-align: center;
+}
+
+.btn-send {
+    width: 130px;
+    background-color: #07A287;
+    border: none;
+}
+
+.exchange-text {
+    margin-left: 31%;
+}
+
+.exchange-text-comment {
+    font-style: italic;
+    color: red;
+}
+
+.modal-PartnerEdit {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content-PartnerEdit, .modal-content-brand-associate{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #FF0000 !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity:1 !important;
+}
+
+    .close:hover,
+    .close:focus {
+        opacity:0.5 !important;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 17px;
+    margin-left: 2%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch1 {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 17px;
+    margin-left: 2%;
+}
+
+.switch1 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+.modalList {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content-list {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+form .page-item.active .page-link {
+    z-index: 0;
+}
+.footer {
+    z-index: -1;
+}
+.voucher-Issuance {
+    background-color:  #07A287;
+    padding: 3px 20px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.aggregrator {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.agg-radio-optn {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.agg-radio {
+    border: 0px;
+    width: 14%;
+    height: 2em;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.aggregrator-btn {
+    background-color: #39B59F;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.brand-assocyait-frame {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px
+}
+
+.brand-associate {
+    border: 1px solid #E2E2E2;
+    width: 85%;
+    height: 450px;
+    padding: 40px 60px;
+    border-radius: 5px
+}
+
+.brand-input {
+    border: 1px solid #E2E2E2;
+    width: 530px;
+    //height: 395px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.brand-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.brand-input-error {
+    display:flex;
+    flex-direction:column;
+}
+
+.brand-code-input {
+    height: 40px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    width: 345px;
+    outline: none;
+}
+
+.brand-logo-input {
+    padding-top: 9px;
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+    padding-left: 5px;
+}
+
+.save-reset-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}

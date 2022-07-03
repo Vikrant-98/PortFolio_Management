@@ -1,0 +1,55 @@
+﻿@model CustomerRegister
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="~/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="~/css/responsive.css" rel="stylesheet" />
+<form asp-controller="Home" asp-action="UserRegistration" method="post">
+        <section>
+            <div class="Login-wrapper">
+                <div class="Login-content">
+                    <div class="card Login-Card">
+                        @Html.ValidationSummary(true)
+                        <div class="oval">
+                            
+                        </div>
+                        <h3 class="Lead">
+                            PortFolio <span style="color:#9B9A9B">Management</span>
+                        </h3>
+                        <div class="card-body">
+
+                            <div>
+                                <div class="inputbox">
+                                    <input type="text" asp-for="FirstName" class="textbox-email" placeholder="First Name*" />
+                                    <span asp-validation-for="FirstName" class="error"></span>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="text" asp-for="LastName" class="textbox-email" placeholder="Last Name*" />
+                                    <span asp-validation-for="LastName" class="error"></span>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="text" asp-for="MailID" class="textbox-email" placeholder="Email ID*" />
+                                    <span asp-validation-for="MailID" class="error"></span>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="password" asp-for="Password" class="textbox-email" placeholder="Password*" />
+                                    <span asp-validation-for="Password" class="error"></span>
+                                </div>
+                                @Html.ValidationMessage("InvalidError", new { @class = "error" })
+                                <button type="submit" class="Login-btn">
+                                    Register
+                                </button>
+                            </div>
+                            <div class="text-center" style="margin-top:15px">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
