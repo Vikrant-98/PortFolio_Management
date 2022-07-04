@@ -5266,11 +5266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
+      "projectUniqueName": "D:\\Vikrant\\practice\\New folder (2)\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
       "projectName": "PortFolio_Management",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
+      "projectPath": "D:\\Vikrant\\practice\\New folder (2)\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\PortFolio_Management\\PortFolio_Management\\obj\\",
+      "outputPath": "D:\\Vikrant\\practice\\New folder (2)\\PortFolio_Management\\PortFolio_Management\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

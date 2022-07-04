@@ -131,7 +131,7 @@ function RemoveMutual() {
     $.ajax({
         type: 'POST',
         dataType: 'json',
-        url: "/PortFolio/AddCustomerMutualFunds",
+        url: "/PortFolio/RemoveCustomerMutualFunds",
         data: { CustomerId: $("#user").val(), MutualFundId: $("#mutualIdValue").val(), MutualFundQuantity: $("#mutualremoveIdQuantity").val() },
         success: function (data) {
             console.log(data);
