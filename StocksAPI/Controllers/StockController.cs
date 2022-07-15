@@ -1,5 +1,6 @@
 ﻿using Business.Interface;
 using CommonServices.ModelServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace StocksAPI.Controllers
         }
 
         [HttpGet("GetAllCustomerStocks")]
+
         public List<CustomerStocks> GetAllCustomerStocks(int CustomerId)
         {
             var Result = _stockBusiness.GetAllCustomerStocks(CustomerId);
@@ -38,6 +40,7 @@ namespace StocksAPI.Controllers
         }
 
         [HttpPost("AddCustomerStocks")]
+        [Authorize(Roles = "Admin")]
         public async Task<bool> AddCustomerStocks([FromBody] AddCustomerStocks stocks)
         {
             var Result = await _stockBusiness.AddCustomerStocks(stocks).ConfigureAwait(false);
@@ -45,6 +48,7 @@ namespace StocksAPI.Controllers
         }
 
         [HttpPost("RemoveCustomerStocks")]
+        [Authorize(Roles = "Admin")]
         public async Task<bool> RemoveCustomerStocks([FromBody] AddCustomerStocks stocks)
         {
             stocks.StocksQuantity = 0 - stocks.StocksQuantity;

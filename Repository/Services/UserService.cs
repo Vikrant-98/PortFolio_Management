@@ -46,7 +46,7 @@ namespace Repository.Services
 
         }
 
-        public (int, bool) LoginVerification(CustomerLogin Info)
+        public (Customer, bool) LoginVerification(CustomerLogin Info)
         {
             try
             {
@@ -54,11 +54,32 @@ namespace Repository.Services
 
                 if (Result != null)
                 {
-                    return (Result.ID, true);
+                    return (Result, true);
                 }
                 else
                 {
-                    return (0, false);
+                    return (Result, false);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public (Customer, bool) UserDetails(int Info)
+        {
+            try
+            {
+                var Result = _dbContext.Customer.Where(u => u.ID == Info).FirstOrDefault();
+                
+                if (Result != null)
+                {
+                    return (Result, true);
+                }
+                else
+                {
+                    return (Result, false);
                 }
             }
             catch (Exception e)

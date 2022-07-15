@@ -13,6 +13,7 @@ namespace CommonServices.ModelServices
         public string LastName { get; set; }
         public string MailID { get; set; }
         public string Password { get; set; }
+        public string Role { get; set; }
         public DateTime CreateDate { get; set; } = DateTime.Now;
         public DateTime ModifiedDate { get; set; } = DateTime.Now;
     }

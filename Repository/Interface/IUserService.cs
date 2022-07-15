@@ -7,6 +7,8 @@ namespace Repository.Interface
     {
         Task<bool> RegisterUser(Customer customer);
 
-        (int, bool) LoginVerification(CustomerLogin Info);
+        (Customer, bool) LoginVerification(CustomerLogin Info);
+
+        (Customer, bool) UserDetails(int Info);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Business.Interface;
 using CommonServices.ModelServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -32,6 +33,7 @@ namespace MutualFundsAPI.Controllers
         }
 
         [HttpPost("AddCustomerMutualFunds")]
+        [Authorize(Roles = "Admin")]
         public async Task<bool> AddCustomerMutualFunds([FromBody] AddCustomerMutualFunds mutualFunds)
         {
             var Result = await _mutualFundBusiness.AddCustomerMutualFunds(mutualFunds).ConfigureAwait(false);
@@ -39,6 +41,7 @@ namespace MutualFundsAPI.Controllers
         }
 
         [HttpPost("RemoveCustomerMutualFunds")]
+        [Authorize(Roles = "Admin")]
         public async Task<bool> RemoveCustomerMutualFunds([FromBody] AddCustomerMutualFunds mutualFunds)
         {
             mutualFunds.MutualFundQuantity = 0 - mutualFunds.MutualFundQuantity;
