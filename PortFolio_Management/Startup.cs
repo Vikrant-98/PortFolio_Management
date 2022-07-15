@@ -1,3 +1,5 @@
+using Business.Interface;
+using Business.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -5,9 +7,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PortFolio_Management.Business;
-using PortFolio_Management.Data;
-using PortFolio_Management.Repository;
+using PortFolio_Management.ProxyClientService;
+using Repository.ApplicationDB;
+using Repository.Interface;
+using Repository.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,10 +33,21 @@ namespace PortFolio_Management
             services.AddControllersWithViews();
             services.AddTransient<IUserBusiness, UserBusiness>();
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IMutualFundService, MutualFundService>();
-            services.AddTransient<IMutualFundBusiness, MutualFundBusiness>();
-            services.AddTransient<IStockServices, StocksServices>();
-            services.AddTransient<IStockBusiness, StockBusiness>();
+            services.AddHttpClient<MutualFundClient>(c =>
+            {
+                c.BaseAddress = new Uri(Configuration["MutualFundClient"]);
+                c.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
+            services.AddHttpClient<PortFolioClient>(c =>
+            {
+                c.BaseAddress = new Uri(Configuration["PortFolioClient"]);
+                c.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
+            services.AddHttpClient<StocksClient>(c =>
+            {
+                c.BaseAddress = new Uri(Configuration["StocksClient"]);
+                c.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
             services.AddDbContext<ApplicationDbContext>(item =>
 
             item.UseSqlServer(Configuration.GetConnectionString("myconn"))

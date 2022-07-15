@@ -1,0 +1,15 @@
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\Business.dll
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\Business.pdb
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\CommonServices.dll
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\Repository.dll
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\CommonServices.pdb
+D:\Vikrant\newone\PortFolio_Management\Business\bin\Debug\netcoreapp3.1\Repository.pdb
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.dll
+D:\Vikrant\newone\PortFolio_Management\Business\obj\Debug\netcoreapp3.1\Business.pdb

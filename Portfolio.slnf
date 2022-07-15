@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "PortFolio_Management.sln",
+    "projects": [
+      "Business\\Business.csproj",
+      "CommonServices\\CommonServices.csproj",
+      "MutualFundsAPI\\MutualFundsAPI.csproj",
+      "PortFolioAPI\\PortFolioAPI.csproj",
+      "PortFolio_Management\\PortFolio_Management.csproj",
+      "Repository\\Repository.csproj",
+      "StocksAPI\\StocksAPI.csproj"
+    ]
+  }
+}

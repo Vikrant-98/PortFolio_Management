@@ -19,4 +19,9 @@
 	  <Folder Include="Views\PortFolio\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Business\Business.csproj" />
+	  <ProjectReference Include="..\CommonServices\CommonServices.csproj" />
+	</ItemGroup>
+
 </Project>

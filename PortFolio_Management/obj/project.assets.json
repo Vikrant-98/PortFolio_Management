@@ -1375,6 +1375,45 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CommonServices": "1.0.0",
+          "Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
+      "CommonServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CommonServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonServices.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CommonServices": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -5248,11 +5287,28 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    },
+    "CommonServices/1.0.0": {
+      "type": "project",
+      "path": "../CommonServices/CommonServices.csproj",
+      "msbuildProject": "../CommonServices/CommonServices.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Business >= 1.0.0",
       "ClosedXML >= 0.95.4",
+      "CommonServices >= 1.0.0",
       "DocumentFormat.OpenXml >= 2.11.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
@@ -5260,23 +5316,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Vikrant Chittee\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Vikrant\\practice\\New folder (2)\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
+      "projectUniqueName": "D:\\Vikrant\\newone\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
       "projectName": "PortFolio_Management",
-      "projectPath": "D:\\Vikrant\\practice\\New folder (2)\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Vikrant\\practice\\New folder (2)\\PortFolio_Management\\PortFolio_Management\\obj\\",
+      "projectPath": "D:\\Vikrant\\newone\\PortFolio_Management\\PortFolio_Management\\PortFolio_Management.csproj",
+      "packagesPath": "C:\\Users\\Vikrant Chittee\\.nuget\\packages\\",
+      "outputPath": "D:\\Vikrant\\newone\\PortFolio_Management\\PortFolio_Management\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vikrant Chittee\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5290,7 +5346,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Vikrant\\newone\\PortFolio_Management\\Business\\Business.csproj": {
+              "projectPath": "D:\\Vikrant\\newone\\PortFolio_Management\\Business\\Business.csproj"
+            },
+            "D:\\Vikrant\\newone\\PortFolio_Management\\CommonServices\\CommonServices.csproj": {
+              "projectPath": "D:\\Vikrant\\newone\\PortFolio_Management\\CommonServices\\CommonServices.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

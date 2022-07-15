@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Interface;
+using CommonServices.ModelServices;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PortFolio_Management.Business;
-using PortFolio_Management.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -78,8 +78,6 @@ namespace PortFolio_Management.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-            
-            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -31,7 +31,9 @@
     ".NETCoreApp,Version=v3.1": {
       "PortFolio_Management/1.0.0": {
         "dependencies": {
+          "Business": "1.0.0",
           "ClosedXML": "0.95.4",
+          "CommonServices": "1.0.0",
           "DocumentFormat.OpenXml": "2.11.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
@@ -1185,6 +1187,39 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
+        }
+      },
+      "Business/1.0.0": {
+        "dependencies": {
+          "CommonServices": "1.0.0",
+          "Repository": "1.0.0"
+        },
+        "runtime": {
+          "Business.dll": {}
+        },
+        "compile": {
+          "Business.dll": {}
+        }
+      },
+      "CommonServices/1.0.0": {
+        "runtime": {
+          "CommonServices.dll": {}
+        },
+        "compile": {
+          "CommonServices.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "dependencies": {
+          "CommonServices": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "Repository.dll": {}
+        },
+        "compile": {
+          "Repository.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3551,6 +3586,21 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
